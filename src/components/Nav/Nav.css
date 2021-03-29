@@ -1,0 +1,14 @@
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	width: 100%;
+	font-weight: 500;
+}
+
+.links {
+	text-decoration: none;
+	color: burlywood;
+	padding: 2rem;
+}
