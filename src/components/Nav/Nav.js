@@ -9,16 +9,16 @@ const Nav = () => {
 				<Link to='/' className='links'>
 					Home
 				</Link>
-				<Link to='/add-flavor' className='links'>
+				<Link to='/stars' className='links'>
 					Stars
 				</Link>
-				{/* <Link to='/add-flavor' className='links'>
-					location
+				{/* <Link to='/sigin-and-login' className='links'>
+					signin/login
 				</Link> */}
-				<Link to='/add-flavor' className='links'>
+				<Link to='/restaurants' className='links'>
 					Restaurants
 				</Link>
-				<Link to='/add-flavor' className='links'>
+				<Link to='/about' className='links'>
 					About
 				</Link>
 			</nav>
