@@ -12,3 +12,8 @@
 	color: burlywood;
 	padding: 2rem;
 }
+
+.nav .links:hover {
+	font-size: 110%;
+	color: chartreuse;
+}
