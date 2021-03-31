@@ -27,7 +27,17 @@ code {
   
   /* background-color: red; */
 }
-.link-text{color:gold;
+.link-text{color: gold;
   
 }
 .link-text:hover{color: white;}
+
+.michelin-pic{
+  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -120px;
+
+}
