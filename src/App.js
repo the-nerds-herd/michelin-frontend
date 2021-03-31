@@ -4,8 +4,8 @@ import Nav from './components/Nav/Nav';
 import Home from './components/Home/Home';
 import Restaurants from './components/Restaurants/Restaurants';
 import RestaurantID from './components/RestaurantID/RestaurantID';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ReviewForm from './components/ReviewForm/ReviewForm';
 
 function App() {
 	return (
@@ -25,6 +25,7 @@ function App() {
 				<Route path='/' exact component={Home} />
 				<Route path='/restaurants' exact component={Restaurants} />
 				<Route path='/restaurants/:id' component={RestaurantID} />
+				<Route path='/restaurants/add-review' component={ReviewForm} />
 			</main>
 			<footer></footer>
 		</div>

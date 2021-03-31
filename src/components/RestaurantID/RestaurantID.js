@@ -3,6 +3,7 @@ import { useHistory, Link } from 'react-router-dom';
 import axios from 'axios';
 import APIurl from '../../config';
 import './RestaurantID.css';
+import { Route } from 'react-router-dom';
 
 const RestaurantID = ({ match }) => {
 	let history = useHistory();
@@ -90,7 +91,11 @@ const RestaurantID = ({ match }) => {
 				</div>
 				<div className='reviewsContainer'>
 					<h3>Reviews</h3>
-					<div className='reviewform'></div>
+					<div className='reviewform'>
+						<Link to='/restaurants/add-review' className='reviewlink'>
+							<p>Write A Review</p>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</div>
