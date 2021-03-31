@@ -23,7 +23,7 @@ const Shows = () => {
 			<Grid gap='1rem'>
 				{restaurants.map((rest) => (
 					<div className='restLinks'>
-						<Link to={`/${rest._id}`} className='restlinktext'>
+						<Link to={`/restaurants/${rest._id}`} className='restlinktext'>
 							<p>{rest.name}</p>
 							<img
 								src={rest.restaurantImg}
