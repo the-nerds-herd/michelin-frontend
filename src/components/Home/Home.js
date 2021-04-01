@@ -6,26 +6,29 @@ import './Home.css';
 const Home = () => {
 	return (
 		<div className='home'>
-			<Container className='center' fluid>
-			<Navbar className='navbar' fixed="bottom" variant='dark'>
+			<Container  className='center' fluid>
+			<Navbar  className='navbar' fixed="bottom" variant='dark'>
 				<Navbar.Brand href='#home'>
 					{/* <WiStars className='star' /> */}
 				</Navbar.Brand>
-				<Nav id='mr-auto'>
-					<Nav.Link href='#home'>
+				<Nav className='mx-auto'>
+					<Nav.Link href='/'>
 						<h4 className='link-text'>Home</h4>
 					</Nav.Link>
-					<Nav.Link href='#features'>
-						<h4 className='link-text'>Stars</h4>
+					<Nav.Link href='/restaurants'>
+						<h4 className='link-text'>Resturants</h4>
 					</Nav.Link>
-					<Nav.Link href='#pricing'>
-						<h4 className='link-text'>Resurants</h4>
+					<Nav.Link href='/about'>
+						<h4 className='link-text'>About</h4>
+					</Nav.Link>
+					<Nav.Link href='/restaurants/add-review'>
+						<h4 className='link-text'>Reviews</h4>
 					</Nav.Link>
 				</Nav>
 			</Navbar>
 			
-
-			<h1 class='title'>Michelin Star Finder</h1>
+				</Container>
+			<h1	 class='title'>Michelin Star Finder</h1>
 
 			<Image
 				className='michelin-pic'
@@ -33,7 +36,7 @@ const Home = () => {
 				roundedCircle
 				
 			/>
-				</Container>
+				
 			{/* <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFAc4PXk8yxyFkfF2saHjDNhQexJ4EvJ4yHW5UPIEHw-7ZemNAaaAQjLqFKv2lJ1_exDw&usqp=CAU" roundedCircle /> */}
 		</div>
 	);
