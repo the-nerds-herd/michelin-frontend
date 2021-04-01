@@ -37,6 +37,23 @@
 	height: 70%;
 }
 
-.reviewform {
-	height: 70%;
+.reviewInformation {
+	border: 1px solid lightgray;
+	margin: 1rem;
+}
+
+.reviewForm {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	height: 7%;
+}
+
+.reviewForm h3 {
+	margin-left: 1rem;
+}
+
+.reviewlink {
+	margin-right: 2rem;
+	margin-top: 0.3rem;
 }
