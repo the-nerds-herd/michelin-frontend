@@ -8,8 +8,10 @@ import OneStar from './components/Star/OneStar';
 import TwoStars from './components/Star/TwoStars';
 import ThreeStars from './components/Star/ThreeStars';
 import ReviewForm from './components/ReviewForm/ReviewForm';
-import { Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from './components/Nav/Nav';
+import Footer from './components/Footer';
 
 function App() {
 	return (
@@ -27,8 +29,8 @@ function App() {
 			</header>
 			<main>
 				<Route path='/' exact component={Home} />
-				<Route path='/restaurants' exact component={Restaurants} />
-				<Route path='/stars' component={Star} />
+				{/* <Route path='/restaurants' exact component={Restaurants} /> */}
+				<Route path='/restaurants' exact component={Star} />
 				<Route path='/onestar' exact component={OneStar} />
 				<Route path='/twostars' exact component={TwoStars} />
 				<Route path='/threestars' exact component={ThreeStars} />
@@ -38,8 +40,9 @@ function App() {
 					component={ReviewForm}
 				/>
 			</main>
-			<footer></footer>
-
+			<footer>
+				<Footer />
+			</footer>
 		</div>
 	);
 }
