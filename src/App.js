@@ -8,8 +8,9 @@ import OneStar from './components/Star/OneStar';
 import TwoStars from './components/Star/TwoStars';
 import ThreeStars from './components/Star/ThreeStars';
 import ReviewForm from './components/ReviewForm/ReviewForm';
-import { Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from './components/Nav/Nav';
 
 function App() {
 	return (
@@ -39,7 +40,6 @@ function App() {
 				/>
 			</main>
 			<footer></footer>
-
 		</div>
 	);
 }
