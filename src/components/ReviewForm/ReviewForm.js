@@ -6,7 +6,6 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 const ReviewForm = ({ match }) => {
-	const restName = match.params.name;
 	const initialState = {
 		title: '',
 		body: '',
@@ -25,8 +24,6 @@ const ReviewForm = ({ match }) => {
 
 	const handleChange = (event) => {
 		setReview({ ...review, [event.target.id]: event.target.value });
-		console.log(event.target.id);
-		console.log(event.target);
 	};
 
 	const handleSubmit = (event) => {

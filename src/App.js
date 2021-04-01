@@ -4,7 +4,7 @@ import Home from './components/Home/Home';
 import Restaurants from './components/Restaurants/Restaurants';
 import RestaurantID from './components/RestaurantID/RestaurantID';
 import ReviewForm from './components/ReviewForm/ReviewForm';
-import { Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -19,7 +19,6 @@ function App() {
 					/>
 					Michelin Starts Finder
 				</h1>
-				<Nav />
 			</header>
 			<main>
 				<Route path='/' exact component={Home} />
@@ -31,7 +30,6 @@ function App() {
 				/>
 			</main>
 			<footer></footer>
-
 		</div>
 	);
 }
