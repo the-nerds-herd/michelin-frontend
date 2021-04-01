@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Navbar, Col, Image } from 'react-bootstrap';
+import { Nav, Navbar, Image } from 'react-bootstrap';
 
 import { WiStars } from 'react-icons/wi';
 import './Home.css';

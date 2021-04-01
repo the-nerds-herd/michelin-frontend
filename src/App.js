@@ -24,8 +24,11 @@ function App() {
 			<main>
 				<Route path='/' exact component={Home} />
 				<Route path='/restaurants' exact component={Restaurants} />
-				<Route path='/restaurants/:id' component={RestaurantID} />
-				<Route path='/restaurants/add-review' component={ReviewForm} />
+				<Route path='/restaurants/:id' exact component={RestaurantID} />
+				<Route
+					path='/restaurants/:id/:name/add-review'
+					component={ReviewForm}
+				/>
 			</main>
 			<footer></footer>
 		</div>

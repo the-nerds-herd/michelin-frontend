@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import APIurl from '../../config';
 import './RestaurantID.css';
-import { Route } from 'react-router-dom';
 
 const RestaurantID = ({ match }) => {
-	let history = useHistory();
-	const [restaurant, setRestaurant] = useState('');
+	const [restaurant, setRestaurant] = useState({});
 
 	useEffect(() => {
 		const id = match.params.id;
 		axios(`${APIurl}/${id}`)
-			.then((res) => setRestaurant(res.data))
+			.then((res) => {
+				setRestaurant(res.data);
+				console.log(res.data);
+				console.log(restaurant);
+			})
 			.catch(console.error);
 	}, [match.params.id]);
 
@@ -90,11 +92,28 @@ const RestaurantID = ({ match }) => {
 					<img src={restaurant.dishImgTwo} alt='dish picture one' />
 				</div>
 				<div className='reviewsContainer'>
-					<h3>Reviews</h3>
-					<div className='reviewform'>
-						<Link to='/restaurants/add-review' className='reviewlink'>
+					<div className='reviewForm'>
+						<h3>Reviews</h3>
+						<Link
+							to={`/restaurants/${restaurant._id}/${restaurant.name}/add-review`}
+							className='reviewlink'>
 							<p>Write A Review</p>
 						</Link>
+					</div>
+					<div className='reviewsMessages'>
+						{restaurant.reviews && restaurant.reviews.length ? (
+							restaurant.reviews.map((review) => (
+								<div className='reviewInformation'>
+									<p>Reviewer: {review.reviewer}</p>
+									<p>Rating: {review.rating}</p>
+									<p>Review Title: {review.title}</p>
+									<p>Review Content: {review.body}</p>
+									<p>Review Updated at: {review.updatedAt.slice(0, 10)}</p>
+								</div>
+							))
+						) : (
+							<div style={{ marginLeft: '1rem' }}>No Review yet.</div>
+						)}
 					</div>
 				</div>
 			</div>
