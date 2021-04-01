@@ -27,7 +27,7 @@ const Shows = () => {
 							<p>{rest.name}</p>
 							<img
 								src={rest.restaurantImg}
-								alt='restaurant picture'
+								alt='restaurant'
 								width='100%'
 								className='restImg'
 							/>

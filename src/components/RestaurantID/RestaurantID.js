@@ -82,14 +82,14 @@ const RestaurantID = ({ match }) => {
 					<p>Phone: {restaurant.Phone}</p>
 					<p>Address: {restaurant.address}</p>
 					<div className='restPics'>
-						<img src={restaurant.restaurantImg} alt='restaurant picture' />
-						<img src={restaurant.dishImgOne} alt='dish picture two' />
+						<img src={restaurant.restaurantImg} alt='restaurant' />
+						<img src={restaurant.dishImgOne} alt='dish one' />
 					</div>
 				</div>
 			</div>
 			<div className='reviews'>
 				<div className='reviewsImg'>
-					<img src={restaurant.dishImgTwo} alt='dish picture one' />
+					<img src={restaurant.dishImgTwo} alt='dish two' />
 				</div>
 				<div className='reviewsContainer'>
 					<div className='reviewForm'>
