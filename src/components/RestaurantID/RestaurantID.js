@@ -77,7 +77,7 @@ const RestaurantID = ({ match }) => {
 					<a href={restaurant.website}>{restaurant.website}</a>
 					<p>Opening Hours: {restaurant.openingHours}</p>
 					<p>
-						<a href={restaurant.menue}>Menue</a>
+						<a href={restaurant.menue}>Menu</a>
 					</p>
 					<p>Phone: {restaurant.Phone}</p>
 					<p>Address: {restaurant.address}</p>
