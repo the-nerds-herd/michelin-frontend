@@ -25,7 +25,6 @@ function App() {
 					/>
 					Michelin Starts Finder
 				</h1>
-				<Nav />
 			</header>
 			<main>
 				<Route path='/' exact component={Home} />
@@ -43,6 +42,7 @@ function App() {
 			<footer>
 				<Footer />
 			</footer>
+
 		</div>
 	);
 }

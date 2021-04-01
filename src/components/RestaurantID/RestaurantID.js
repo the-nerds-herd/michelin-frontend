@@ -2,21 +2,41 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import APIurl from '../../config';
+import Update from './Update';
 import './RestaurantID.css';
 
 const RestaurantID = ({ match }) => {
 	const [restaurant, setRestaurant] = useState({});
+	const [update, setUpdate] = useState(false);
 
-	useEffect(() => {
-		const id = match.params.id;
+	const id = match.params.id;
+	const getData = () => {
 		axios(`${APIurl}/${id}`)
 			.then((res) => {
 				setRestaurant(res.data);
-				console.log(res.data);
-				console.log(restaurant);
 			})
 			.catch(console.error);
+	};
+
+	useEffect(() => {
+		getData();
 	}, [match.params.id]);
+
+	const handleDelete = (event) => {
+		event.preventDefault();
+		const id = event.target.attributes.class.nodeValue;
+		axios
+			.delete(`${APIurl}/reviews/${id}`)
+			.then(() => {
+				getData();
+			})
+			.catch(console.error);
+	};
+
+	const updating = () => {
+		!update ? setUpdate(true) : setUpdate(false);
+		console.log(update);
+	};
 
 	if (!restaurant) {
 		return <h1>Loading...</h1>;
@@ -72,12 +92,12 @@ const RestaurantID = ({ match }) => {
 				</div>
 				<div className='restText'>
 					{/* <p>Start(s) Number: {restaurant.starNumber}</p> */}
-					<p>Introcution (from Michelin Guide)</p>
+					<p>Intrducution (from Michelin Guide)</p>
 					<p>{restaurant.introduction}</p>
 					<a href={restaurant.website}>{restaurant.website}</a>
 					<p>Opening Hours: {restaurant.openingHours}</p>
 					<p>
-						<a href={restaurant.menue}>Menue</a>
+						<a href={restaurant.menue}>Menu</a>
 					</p>
 					<p>Phone: {restaurant.Phone}</p>
 					<p>Address: {restaurant.address}</p>
@@ -104,16 +124,24 @@ const RestaurantID = ({ match }) => {
 						{restaurant.reviews && restaurant.reviews.length ? (
 							restaurant.reviews.map((review) => (
 								<div className='reviewInformation'>
+									<p>Review ID:{review._id}</p>
 									<p>Reviewer: {review.reviewer}</p>
 									<p>Rating: {review.rating}</p>
 									<p>Review Title: {review.title}</p>
 									<p>Review Content: {review.body}</p>
 									<p>Review Updated at: {review.updatedAt.slice(0, 10)}</p>
+									<button onClick={handleDelete} className={review._id}>
+										Delete
+									</button>
+									<button onClick={updating} className={review._id}>
+										Update
+									</button>
 								</div>
 							))
 						) : (
 							<div style={{ marginLeft: '1rem' }}>No Review yet.</div>
 						)}
+						{update ? <Update match={match} /> : null}
 					</div>
 				</div>
 			</div>
