@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import APIurl from '../../config';
 import Grid from '../Grid';
-import './Restaurants.css';
+import '../../App.css';
 
 const Shows = () => {
 	const [restaurants, setRestaurants] = useState();

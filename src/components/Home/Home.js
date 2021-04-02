@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, Container, Image } from 'react-bootstrap';
 import { WiStars } from 'react-icons/wi';
-import './Home.css';
+import '../../App.css'
 
 const Home = () => {
 	return (
