@@ -9,6 +9,7 @@ import OneStar from './components/Star/OneStar';
 import TwoStars from './components/Star/TwoStars';
 import ThreeStars from './components/Star/ThreeStars';
 import ReviewForm from './components/ReviewForm/ReviewForm';
+import About from './components/About'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer';
@@ -22,6 +23,7 @@ function App() {
 				<Navi />
 				<Route path='/' exact component={Home} />
 				{/* <Route path='/restaurants' exact component={Restaurants} /> */}
+				<Route path='/about' exact component={About}/>
 				<Route path='/restaurants' exact component={Star} />
 				<Route path='/onestar' exact component={OneStar} />
 				<Route path='/twostars' exact component={TwoStars} />
