@@ -8,11 +8,10 @@ import '../../App.css';
 
 const RestaurantID = ({ match }) => {
 	const [restaurant, setRestaurant] = useState({});
-	const [update, setUpdate] = useState(false);
+	const [appear, setAppear] = useState('');
 
-	const id = match.params.id;
 	const getData = () => {
-		axios(`${APIurl}/${id}`)
+		axios(`${APIurl}/${match.params.id}`)
 			.then((res) => {
 				setRestaurant(res.data);
 			})
@@ -34,9 +33,10 @@ const RestaurantID = ({ match }) => {
 			.catch(console.error);
 	};
 
-	const updating = () => {
-		!update ? setUpdate(true) : setUpdate(false);
-		console.log(update);
+	const updating = (event) => {
+		appear === ''
+			? setAppear(event.target.attributes.class.nodeValue)
+			: setAppear('');
 	};
 
 	if (!restaurant) {
@@ -137,12 +137,14 @@ const RestaurantID = ({ match }) => {
 									<button onClick={updating} className={review._id}>
 										Update
 									</button>
+									{appear.includes(review._id) ? (
+										<Update match={match} review={review} getData={getData} />
+									) : null}
 								</div>
 							))
 						) : (
 							<div style={{ marginLeft: '1rem' }}>No Review yet.</div>
 						)}
-						{update ? <Update match={match} /> : null}
 					</div>
 				</div>
 			</div>

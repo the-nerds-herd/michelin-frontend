@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import APIurl from '../../config';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-const Update = ({ match }) => {
-	console.log(match);
-	const history = useHistory();
-	const [review, setReview] = useState({
+const Update = ({ match, review, getData }) => {
+	const [reviews, setReviews] = useState({
 		title: '',
 		body: '',
 		reviewer: '',
@@ -18,21 +15,20 @@ const Update = ({ match }) => {
 
 	const handleUpdate = (event) => {
 		event.preventDefault();
-		console.log(match.params);
-		// const id = 0;
-		// axios
-		// 	.put(`${APIurl}/reviews/${id}`, review)
-		// 	.then(() => {
-		// 		history.push('/restaurants/');
-		// 	})
-		// 	.catch(console.error);
+		const id = review._id;
+		axios
+			.put(`${APIurl}/reviews/${id}`, reviews)
+			.then(() => {
+				getData();
+			})
+			.catch(console.error);
 	};
 	const handleChange = (event) => {
-		setReview({ ...review, [event.target.id]: event.target.value });
+		setReviews({ ...reviews, [event.target.id]: event.target.value });
 	};
 
 	return (
-		<div>
+		<div className={review._id}>
 			<div>
 				<h4>
 					Update Review{' '}
@@ -45,18 +41,18 @@ const Update = ({ match }) => {
 						<Form.Label>Reviewer</Form.Label>
 						<Form.Control
 							type='text'
-							placeholder='your name'
+							placeholder={review.reviewer}
 							onChange={handleChange}
-							value={review.reviewer}
+							value={reviews.reviewer}
 						/>
 					</Form.Group>
 					<Form.Group controlId='title'>
 						<Form.Label>Title</Form.Label>
 						<Form.Control
 							type='text'
-							placeholder='title of your review'
+							placeholder={review.title}
 							onChange={handleChange}
-							value={review.title}
+							value={reviews.title}
 						/>
 					</Form.Group>
 					<Form.Group controlId='rating'>
@@ -66,7 +62,7 @@ const Update = ({ match }) => {
 						<Form.Control
 							as='select'
 							onChange={handleChange}
-							value={review.rating}>
+							value={reviews.rating}>
 							<option></option>
 							<option>1</option>
 							<option>2</option>
@@ -80,9 +76,9 @@ const Update = ({ match }) => {
 						<Form.Control
 							as='textarea'
 							rows={8}
-							placeholder="What's your comment?"
+							placeholder={review.body}
 							onChange={handleChange}
-							value={review.body}
+							value={reviews.body}
 						/>
 					</Form.Group>
 					<Button variant='outline-primary' type='submit'>
