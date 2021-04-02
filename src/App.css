@@ -1,14 +1,124 @@
-/* .App {
-	text-align: center;
-} */
+.home {
+	background-image: url(https://images.pexels.com/photos/255501/pexels-photo-255501.jpeg?cs=srgb&dl=pexels-pixabay-255501.jpg&fm=jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 100vh;
+}
+.title{
+	color: red;
+	position: fixed;
+	top: 18%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -210px;
+	text-shadow: 1px 1px 2px white;
+	font-size: 50px;
+}
+.star {
+	color: gold;
+	font-size: 60px;
+}
+.navbar {
+	position: fixed;
+	/* background-color: red; */
+	margin-bottom: 90px;
+}
+.link-text {
+	color: gold;
+}
+.link-text:hover {
+	color: white;
+}
 
-/* .App-header {
-	background-color: #282c34;
-	min-height: 20vh;
+.michelin-pic {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -70px;
+	margin-left: -120px;
+}
+
+/* ====================END HOME================ */
+
+.restPics {
+	width: 100%;
+}
+
+.restPics img {
+	width: 50%;
+}
+
+.restContainer {
+	display: flex;
+	width: 100%;
+}
+
+.restInform {
+	width: 65%;
+}
+
+.reviews {
+	width: 35%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(2vmin);
-	color: white;
-} */
+}
+
+.restText {
+	text-align: start;
+}
+
+.reviewsImg {
+	height: 40%;
+}
+.reviewsImg img {
+	height: 100%;
+	width: 100%;
+}
+.reviewsContainer {
+	border: 1px solid gray;
+	height: 70%;
+}
+
+.reviewInformation {
+	border: 1px solid lightgray;
+	margin: 1rem;
+}
+
+.reviewForm {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	height: 7%;
+}
+
+.reviewForm h3 {
+	margin-left: 1rem;
+}
+
+.reviewlink {
+	margin-right: 2rem;
+	margin-top: 0.3rem;
+}
+
+/* ====================END RESTAURANTSID====================== */
+
+.restImg:hover {
+	width: 110%;
+}
+
+.restLinks {
+	border-color: lightcyan;
+	margin: 15% 3%;
+	padding-top: 2%;
+}
+
+.restLinks .restlinktext {
+	text-decoration: none;
+	color: darkblue;
+}
+
+.restlinktext:hover {
+	color: firebrick;
+}
+/* =======================END RESTAURANTS================= */

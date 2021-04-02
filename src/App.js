@@ -10,21 +10,13 @@ import ThreeStars from './components/Star/ThreeStars';
 import ReviewForm from './components/ReviewForm/ReviewForm';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Nav from './components/Nav/Nav';
 import Footer from './components/Footer';
 
 function App() {
 	return (
 		<div className='App'>
 			<header className='App-header'>
-				<h1>
-					<img
-						src='https://www.nicepng.com/png/full/81-812831_michelin-star-jpg.png'
-						alt='stars'
-						width='7%'
-					/>
-					Michelin Starts Finder
-				</h1>
+		
 			</header>
 			<main>
 				<Route path='/' exact component={Home} />

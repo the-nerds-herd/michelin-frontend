@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import APIurl from '../../config';
 import Update from './Update';
-import './RestaurantID.css';
+
+import '../../App.css';
 
 const RestaurantID = ({ match }) => {
 	const [restaurant, setRestaurant] = useState({});
