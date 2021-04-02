@@ -48,6 +48,18 @@ https://michelin-restaurants-finder.herokuapp.com/restaurants
 - As a visitor, I want to see some animations in the app.
 - As a visitor, I want to see a location map of each restaurant.
 
+## Planning and Workflow
+
+- We built this full stack application with React frontend and Node-Express-Mongoose backend.
+- After coming up the project idea, we set up two repositories (one for frontend, and one for backend).
+- We used Jira Software to create the ticket system. And we tried to mock the industry workflow.
+- We created multiple tickets/issues based on our user stories and each team member went to the board for assignment.
+  ![Screen Shot 2021-04-02 at 10 03 17 AM](https://user-images.githubusercontent.com/78054396/113432520-bff9d500-939a-11eb-9f5b-2ead4a831f7c.png)
+- We used the ticket/issues number as our branch name.
+- Once we completed the tasks, we push to the dev branch in repositories.
+- We set a merge rull which is at least one other member need to review and approve the merge.
+- After merge, we pull or rebase for the updates.
+
 ## Getting Started/Installation Instructions
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
