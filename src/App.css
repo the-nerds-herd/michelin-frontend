@@ -13,14 +13,14 @@
 
 .navbar {
 	/* position: fixed; */
-	background-color: rgb(216, 4, 4);
+	background-color: rgb(191, 0, 44);
 	/* margin-bottom: 90px; */
 }
 .link-text {
 	color: white;
 }
 .link-text:hover {
-	color: gold;
+	color: grey;
 }
 
 .michelin-pic {
@@ -106,22 +106,34 @@ h2 {
 }
 
 .restLinks {
-	border-color: lightcyan;
 	margin: 15% 3%;
 	padding-top: 2%;
 }
 
 .restLinks .restlinktext {
 	text-decoration: none;
-	color: darkblue;
+	color: gray;
+	align-items: center;
+
 }
 
 .restlinktext:hover {
-	color: firebrick;
+	color: rgb(191, 0, 44)
 }
+
+.restLinks .restImg {
+	width: 300px;
+	height: 250px;
+}
+.restLinks p{
+	padding: 4px 8px;
+	margin: 0;
+	font-weight: 650;
+}
+
 /* =======================END RESTAURANTS================= */
 .footer {
-	background-color: rgb(216, 4, 4);
+	background-color: rgb(191, 0, 44);
 	color: white;
 	padding-bottom: 1px;
 }

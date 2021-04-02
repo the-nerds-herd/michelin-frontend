@@ -28,7 +28,6 @@ const Restaurants = () => {
 								<img
 									src={rest.restaurantImg}
 									alt='restaurant'
-									width='100%'
 									className='restImg'
 									/>
 									<p>{rest.name}</p>
@@ -37,6 +36,7 @@ const Restaurants = () => {
 					</div>
 				))}
 			</Grid>
+			
 		</div>
 	);
 };
