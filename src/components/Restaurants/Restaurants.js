@@ -2,13 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import APIurl from '../../config';
-<<<<<<< HEAD
-import Grid from '../Grid';
-import '../../App.css';
-=======
 import Grid from '../Container/Grid';
 import Card from '../Container/Card';
->>>>>>> Add styled components
 
 const Restaurants = () => {
 	const [restaurants, setRestaurants] = useState();

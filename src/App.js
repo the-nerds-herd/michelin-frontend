@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Navi from './components/Navi/Navi';
-import Restaurants from './components/Restaurants/Restaurants';
+// import Restaurants from './components/Restaurants/Restaurants';
 import RestaurantID from './components/RestaurantID/RestaurantID';
 import Star from './components/Star/Stars';
 import OneStar from './components/Star/OneStar';
