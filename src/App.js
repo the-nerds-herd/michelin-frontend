@@ -1,7 +1,7 @@
 // import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home/Home';
-import Navi from './components/Navi/Navi'
+import Navi from './components/Navi/Navi';
 import Restaurants from './components/Restaurants/Restaurants';
 import RestaurantID from './components/RestaurantID/RestaurantID';
 import Star from './components/Star/Stars';
@@ -17,8 +17,7 @@ import Footer from './components/Footer';
 function App() {
 	return (
 		<div className='App'>
-			<header className='App-header'>
-			</header>
+			<header className='App-header'></header>
 			<main>
 				<Navi />
 				<Route path='/' exact component={Home} />
@@ -37,7 +36,6 @@ function App() {
 			<footer>
 				<Footer />
 			</footer>
-
 		</div>
 	);
 }
