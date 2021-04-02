@@ -125,7 +125,7 @@ const RestaurantID = ({ match }) => {
 						{restaurant.reviews && restaurant.reviews.length ? (
 							restaurant.reviews.map((review) => (
 								<div className='reviewInformation'>
-									<p>Review ID:{review._id}</p>
+									{/* <p>Review ID:{review._id}</p> */}
 									<p>Reviewer: {review.reviewer}</p>
 									<p>Rating: {review.rating}</p>
 									<p>Review Title: {review.title}</p>
