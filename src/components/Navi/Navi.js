@@ -22,9 +22,7 @@ const Navi = () => {
 								<h4 className='link-text'>About</h4>
 							</Nav.Link>
 
-							<Nav.Link href='/restaurants/add-review'>
-								<h4 className='link-text'>Reviews</h4>
-							</Nav.Link>
+						
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>

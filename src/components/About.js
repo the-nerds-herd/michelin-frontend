@@ -51,10 +51,10 @@ const About = () => {
 					<img src={Andrew} alt='Engineer Andrew' />
 					<h2>Andrew Childre</h2>
 					<h3>
-						<a href='https://github.com/DiannaNguyen'>LinkedIn</a>
+						<a href='https://www.linkedin.com/in/andrew-childre'>LinkedIn</a>
 					</h3>
 					<h3>
-						<a href='https://github.com/DiannaNguyen'>GitHub</a>
+						<a href='https://github.com/AndrewChildre'>GitHub</a>
 					</h3>
 				</div>
 			</div>
