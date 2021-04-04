@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import APIurl from '../../config';
-import Grid from '../Grid';
-import '../../App.css';
+import Grid from '../Container/Grid';
+import Card from '../Container/Card';
 
-const Shows = () => {
+const Restaurants = () => {
 	const [restaurants, setRestaurants] = useState();
 
 	useEffect(() => {
@@ -19,19 +19,34 @@ const Shows = () => {
 	}
 
 	return (
-		<div className='restaurants'>
-			<Grid gap='1rem'>
+		<div>
+			<div className='stars'>
+				<Link to='/restaurants' className='starslink'>
+					<h3>All Restaurants</h3>
+				</Link>
+				<Link to='/onestar' className='starslink'>
+					<h3>One Star</h3>
+				</Link>
+				<Link to='/twostars' className='starslink'>
+					<h3>Two Stars</h3>
+				</Link>
+				<Link to='/threestars' className='starslink'>
+					<h3>Three Stars</h3>
+				</Link>
+			</div>
+			<Grid>
 				{restaurants.map((rest) => (
 					<div className='restLinks'>
-						<Link to={`/restaurants/${rest._id}`} className='restlinktext'>
-							<p>{rest.name}</p>
-							<img
-								src={rest.restaurantImg}
-								alt='restaurant'
-								width='100%'
-								className='restImg'
-							/>
-						</Link>
+						<Card>
+							<Link to={`/restaurants/${rest._id}`} className='restlinktext'>
+								<img
+									src={rest.restaurantImg}
+									alt='restaurant'
+									className='restImg'
+								/>
+								<p>{rest.name}</p>
+							</Link>
+						</Card>
 					</div>
 				))}
 			</Grid>
@@ -39,4 +54,4 @@ const Shows = () => {
 	);
 };
 
-export default Shows;
+export default Restaurants;

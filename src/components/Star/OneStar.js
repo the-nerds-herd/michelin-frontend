@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import APIurl from '../../config';
 import axios from 'axios';
+import Grid from '../Container/Grid';
+import Card from '../Container/Card';
 
 const OneStar = () => {
 	const [oneStar, setOneStar] = useState([]);
@@ -14,35 +16,42 @@ const OneStar = () => {
 
 	return (
 		<div>
-			<div>
-				<Link to='/onestar'>
-					{/* <img src={MichelinOne} alt="One Michelin Star"/> */}
+			<div className='stars'>
+				<Link to='/restaurants' className='starslink'>
+					<h3>All Restaurants</h3>
+				</Link>
+				<Link to='/onestar' className='starslink'>
 					<h3>One Star</h3>
 				</Link>
-				<Link to='/twostars'>
-					{/* <img src={MichelinTwo} alt="Two Michelin Stars"/> */}
+				<Link to='/twostars' className='starslink'>
 					<h3>Two Stars</h3>
 				</Link>
-				<Link to='/threestars'>
-					{/* <img src={MichelinThree} alt="Three Michelin Stars"/> */}
+				<Link to='/threestars' className='starslink'>
 					<h3>Three Stars</h3>
 				</Link>
 			</div>
+			<Grid>
 				{oneStar.map((restaurant) =>
 					restaurant.starNumber === 1 ? (
-						<div className='oneStarContainer'>
-							<Link to={`/restaurants/${restaurant._id}`}>
-								<p>{restaurant.name}</p>
-								<img
-									src={restaurant.restaurantImg}
-									alt='One Star Michelin Restaurant'
-								/>
-							</Link>
+						<div className='restLinks'>
+							<Card>
+								<Link
+									to={`/restaurants/${restaurant._id}`}
+									className='restlinktext'>
+									<img
+										src={restaurant.restaurantImg}
+										alt='One Star Michelin Restaurant'
+										className='restImg'
+									/>
+									<p>{restaurant.name}</p>
+								</Link>
+							</Card>
 						</div>
 					) : (
-						<p></p>
+						''
 					)
 				)}
+			</Grid>
 		</div>
 	);
 };

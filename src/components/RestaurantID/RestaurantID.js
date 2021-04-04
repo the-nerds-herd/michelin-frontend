@@ -104,6 +104,7 @@ const RestaurantID = ({ match }) => {
 						</p>
 						<p>Phone: {restaurant.Phone}</p>
 						<p>Address: {restaurant.address}</p>
+
 					</div>
 				</div>
 				<div className='backLink'>
