@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import APIurl from '../../config';
 import axios from 'axios';
+import Grid from '../Container/Grid';
+import Card from '../Container/Card';
 
 const ThreeStars = () => {
 	const [threeStars, setThreeStars] = useState([]);
@@ -28,21 +30,28 @@ const ThreeStars = () => {
 					<h3>Three Stars</h3>
 				</Link>
 			</div>
+			<Grid>
 				{threeStars.map((restaurant) =>
 					restaurant.starNumber === 3 ? (
-						<div className='oneStarContainer'>
-							<Link to={`/restaurants/${restaurant._id}`}>
-								<p>{restaurant.name}</p>
-								<img
-									src={restaurant.restaurantImg}
-									alt='Two Stars Michelin Restaurant'
-								/>
-							</Link>
+						<div className='restLinks'>
+							<Card>
+								<Link
+									to={`/restaurants/${restaurant._id}`}
+									className='restlinktext'>
+									<img
+										src={restaurant.restaurantImg}
+										alt='Two Stars Michelin Restaurant'
+										className='restImg'
+									/>
+									<p>{restaurant.name}</p>
+								</Link>
+							</Card>
 						</div>
 					) : (
-						<p></p>
+						''
 					)
 				)}
+			</Grid>
 		</div>
 	);
 };

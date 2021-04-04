@@ -20,7 +20,7 @@ const Restaurants = () => {
 
 	return (
 		<div>
-			<Grid gap='1rem'>
+			<Grid>
 				{restaurants.map((rest) => (
 					<div className='restLinks'>
 						<Card>

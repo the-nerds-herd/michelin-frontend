@@ -1,7 +1,6 @@
- a {
-	 text-decoration: none;
- }
-
+a {
+	text-decoration: none;
+}
 
 .home {
 	background-image: url(https://images.pexels.com/photos/255501/pexels-photo-255501.jpeg?cs=srgb&dl=pexels-pixabay-255501.jpg&fm=jpg);
@@ -10,7 +9,6 @@
 	background-position: center;
 	height: 90vh;
 }
-
 .navbar {
 	/* position: fixed; */
 	background-color: rgb(191, 0, 44);
@@ -22,7 +20,6 @@
 .link-text:hover {
 	color: grey;
 }
-
 .michelin-pic {
 	position: fixed;
 	top: 53%;
@@ -37,35 +34,37 @@ h2 {
 	background-color: white;
 }
 
-/* ====================END HOME================ */
+navdropdownmenu [title] {
+	color: white;
+	font-size: 20px;
+}
+.link-text h6 {
+	color: gray;
+}
 
+
+/* ====================END HOME================ */
 .restPics {
 	width: 100%;
 }
-
 .restPics img {
 	width: 50%;
 }
-
 .restContainer {
 	display: flex;
 	width: 100%;
 }
-
 .restInform {
 	width: 65%;
 }
-
 .reviews {
 	width: 35%;
 	display: flex;
 	flex-direction: column;
 }
-
 .restText {
 	text-align: start;
 }
-
 .reviewsImg {
 	height: 40%;
 }
@@ -77,55 +76,44 @@ h2 {
 	border: 1px solid gray;
 	height: 70%;
 }
-
 .reviewInformation {
 	border: 1px solid lightgray;
 	margin: 1rem;
 }
-
 .reviewForm {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
 	height: 7%;
 }
-
 .reviewForm h3 {
 	margin-left: 1rem;
 }
-
 .reviewlink {
 	margin-right: 2rem;
 	margin-top: 0.3rem;
 }
-
 /* ====================END RESTAURANTSID====================== */
-
-.restImg:hover {
-	width: 110%;
+.restLinks .restImg:hover {
+	width: 150%;
 }
-
 .restLinks {
 	margin: 15% 3%;
 	padding-top: 2%;
 }
-
 .restLinks .restlinktext {
 	text-decoration: none;
 	color: gray;
 	align-items: center;
-
 }
-
 .restlinktext:hover {
-	color: rgb(191, 0, 44)
+	color: rgb(191, 0, 44);
 }
-
 .restLinks .restImg {
 	width: 300px;
 	height: 250px;
 }
-.restLinks p{
+.restLinks p {
 	padding: 4px 8px;
 	margin: 0;
 	font-weight: 650;

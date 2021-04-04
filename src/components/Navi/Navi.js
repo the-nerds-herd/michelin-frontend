@@ -1,10 +1,10 @@
 import React from 'react';
-import { Nav, Navbar} from 'react-bootstrap'
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 const Navi = () => {
-    return (
-			<div>
-				<Navbar collapseOnSelect expand='xs' variant='light' bg='back-color'>
+	return (
+		<div>
+			<Navbar collapseOnSelect expand='xs' variant='light' bg='back-color'>
 					<Navbar.Toggle id='icon' aria-controls='responsive-navbar-nav' />
 					<Navbar.Brand href='/'>
 						<h2>Michelin Star Finder</h2>
@@ -17,17 +17,14 @@ const Navi = () => {
 							<Nav.Link href='/restaurants'>
 								<h4 className='link-text'>Resturants</h4>
 							</Nav.Link>
-
 							<Nav.Link href='/about'>
 								<h4 className='link-text'>About</h4>
 							</Nav.Link>
-
-						
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>
-			</div>
-		);
+		</div>
+	);
 };
 
 export default Navi;
