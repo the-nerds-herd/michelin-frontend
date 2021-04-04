@@ -93,7 +93,7 @@ const RestaurantID = ({ match }) => {
 				</div>
 				<div className='restText'>
 					{/* <p>Start(s) Number: {restaurant.starNumber}</p> */}
-					<p>Intrducution (from Michelin Guide)</p>
+					<p>Introducution (from Michelin Guide)</p>
 					<p>{restaurant.introduction}</p>
 					<a href={restaurant.website}>{restaurant.website}</a>
 					<p>Opening Hours: {restaurant.openingHours}</p>
