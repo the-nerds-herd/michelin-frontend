@@ -37,6 +37,11 @@ const ReviewForm = ({ match }) => {
 			.catch(console.error);
 	};
 
+	const handleClick = (event) => {
+		event.preventDefault();
+		history.push(`/restaurants/${match.params.id}`);
+	};
+
 	return (
 		<div>
 			<h4>
@@ -53,6 +58,7 @@ const ReviewForm = ({ match }) => {
 						placeholder='your name'
 						onChange={handleChange}
 						value={review.reviewer}
+						// require='true'
 					/>
 				</Form.Group>
 				<Form.Group controlId='title'>
@@ -62,6 +68,7 @@ const ReviewForm = ({ match }) => {
 						placeholder='title of your review'
 						onChange={handleChange}
 						value={review.title}
+						// require='true'
 					/>
 				</Form.Group>
 				<Form.Group controlId='rating'>
@@ -92,6 +99,9 @@ const ReviewForm = ({ match }) => {
 				</Form.Group>
 				<Button variant='outline-primary' type='submit'>
 					Submit
+				</Button>
+				<Button variant='outline-danger' onClick={handleClick}>
+					Cancle
 				</Button>
 			</Form>
 		</div>
