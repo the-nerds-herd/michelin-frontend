@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import APIurl from '../../config';
 
@@ -20,7 +19,6 @@ function SignUp() {
 			.then(() => {
 				setUser(formState.name);
 				setFormState(initialState);
-				// history.push('/');
 			})
 			.catch(console.error);
 	};

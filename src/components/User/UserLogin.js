@@ -25,7 +25,6 @@ function LoginPage() {
 			.then(() => {
 				setUser(formState.name);
 				setFormState(initialState);
-				// history.push('/');
 			})
 			.catch(() => setError(true));
 	};

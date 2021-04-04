@@ -11,9 +11,7 @@ a {
 }
 
 .navbar {
-	/* position: fixed; */
 	background-color: rgb(191, 0, 44);
-	/* margin-bottom: 90px; */
 }
 .link-text {
 	color: white;
@@ -65,7 +63,6 @@ h2 {
 	display: flex;
 	width: 100%;
 }
-
 
 .restDesc {
 	text-align: center;
@@ -151,12 +148,12 @@ h2 {
 	margin: 20px;
 }
 .stars h3 {
-	color:rgb(191, 0, 44);
+	color: rgb(191, 0, 44);
 	margin: 0 40px 0 0;
 	font-size: 22px;
 }
 
-.stars .starslink{
+.stars .starslink {
 	text-decoration: none;
 }
 

@@ -6,7 +6,6 @@ import Andrew from './images/Andrew.jpg';
 import { Card, CardDeck } from 'react-bootstrap';
 const About = () => {
 	return (
-
 		<div className='about'>
 			<h1>Meet the brains:</h1>
 			<h3>
@@ -15,9 +14,8 @@ const About = () => {
 				Finder is built using React.js with Boostrap and Flexbox. It uses a
 				custom API built from Node.js with Express.js, and a database with
 				MongoDB Atlas.
-	
 			</h3>
-			<br/>
+			<br />
 			<CardDeck>
 				<Card>
 					<Card.Img variant='top' src={Jordan} />
@@ -65,7 +63,6 @@ const About = () => {
 					</Card.Body>
 				</Card>
 			</CardDeck>
-			{/* ================================== */}
 		</div>
 	);
 };
