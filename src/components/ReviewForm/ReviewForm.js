@@ -28,8 +28,14 @@ const ReviewForm = ({ match }) => {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		axios
-			.post(`${APIurl}/reviews`, review)
+		axios({
+			url: `${APIurl}/reviews`,
+			method: 'POST',
+			headers: {
+				Authorization: `Bearer ${localStorage.getItem('token')}`,
+			},
+			data: review,
+		})
 			.then(() => {
 				setReview(initialState);
 				history.push(`/restaurants/${match.params.id}`);

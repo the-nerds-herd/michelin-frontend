@@ -25,8 +25,14 @@ const RestaurantID = ({ match }) => {
 	const handleDelete = (event) => {
 		event.preventDefault();
 		const id = event.target.attributes.class.nodeValue;
-		axios
-			.delete(`${APIurl}/reviews/${id}`)
+
+		axios({
+			url: `${APIurl}/reviews/${id}`,
+			method: 'DELETE',
+			headers: {
+				Authorization: `Bearer ${localStorage.getItem('token')}`,
+			},
+		})
 			.then(() => {
 				getData();
 			})
