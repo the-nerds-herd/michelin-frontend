@@ -16,8 +16,7 @@ import Footer from './components/Footer';
 function App() {
 	return (
 		<div className='App'>
-			<header className='App-header'>
-			</header>
+			<header className='App-header'></header>
 			<main>
 				<Navi />
 				<Route path='/' exact component={Home} />
@@ -37,7 +36,6 @@ function App() {
 			<footer>
 				<Footer />
 			</footer>
-
 		</div>
 	);
 }
