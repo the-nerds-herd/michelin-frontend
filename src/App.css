@@ -3,8 +3,19 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 90vh;}
- 
+	height: 90vh;
+}
+
+/* .restaurants {
+	position: relative;
+	background-image: url(https://images.pexels.com/photos/255501/pexels-photo-255501.jpeg?cs=srgb&dl=pexels-pixabay-255501.jpg&fm=jpg);
+	background-size: cover;
+}
+.restaurants::before {
+	content: '';
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.23);
+} */
 
 .navbar {
 	/* position: fixed; */
@@ -28,18 +39,26 @@
 h2 {
 	color: white;
 }
-#icon{
+#icon {
 	background-color: white;
 }
 
 /* ====================END HOME================ */
 
 .restPics {
-	width: 100%;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+
+.restInform {
+	width: 60%;
+
+	text-align: center;
 }
 
 .restPics img {
-	width: 50%;
+	width: 100%;
 }
 
 .restContainer {
@@ -47,30 +66,19 @@ h2 {
 	width: 100%;
 }
 
-.restInform {
-	width: 65%;
-}
-
-.reviews {
-	width: 35%;
-	display: flex;
-	flex-direction: column;
+.restDesc {
+	text-align: center;
 }
 
 .restText {
 	text-align: start;
+	width: 90%;
+	margin: 1rem;
 }
 
-.reviewsImg {
-	height: 40%;
-}
-.reviewsImg img {
-	height: 100%;
-	width: 100%;
-}
 .reviewsContainer {
 	border: 1px solid gray;
-	height: 70%;
+	margin: 1rem;
 }
 
 .reviewInformation {
@@ -92,8 +100,26 @@ h2 {
 .reviewlink {
 	margin-right: 2rem;
 	margin-top: 0.3rem;
+	font-size: large;
 }
 
+.backLink {
+	text-align: start;
+	margin: 1rem;
+}
+
+.backLink p {
+	color: rgb(184, 109, 22);
+}
+
+.backLink p:hover {
+	color: indigo;
+}
+
+.updateForm {
+	text-align: left;
+	margin-top: 2rem;
+}
 /* ====================END RESTAURANTSID====================== */
 
 .restImg:hover {
@@ -119,5 +145,5 @@ h2 {
 	background-color: rgb(216, 4, 4);
 	color: white;
 	padding-bottom: 1px;
-margin-top: 50px;
+	margin-top: 50px;
 }

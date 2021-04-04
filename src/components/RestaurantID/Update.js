@@ -30,13 +30,13 @@ const Update = ({ match, review, getData }) => {
 	return (
 		<div className={review._id}>
 			<div>
-				<h4>
+				<h4 style={{ marginTop: '2rem' }}>
 					Update Review{' '}
 					<span style={{ fontStyle: 'italic', color: 'brown' }}>
 						{match.params.name}
 					</span>
 				</h4>
-				<Form onSubmit={handleUpdate}>
+				<Form onSubmit={handleUpdate} className='updateForm'>
 					<Form.Group controlId='reviewer'>
 						<Form.Label>Reviewer</Form.Label>
 						<Form.Control

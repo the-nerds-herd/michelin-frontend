@@ -46,71 +46,70 @@ const RestaurantID = ({ match }) => {
 	return (
 		<div className='restContainer'>
 			<div className='restInform'>
-				<h1>{restaurant.name}</h1>
-				<div>
-					{restaurant.starNumber === 3 && (
-						<div>
-							<img
-								src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MichelinStar.svg/1200px-MichelinStar.svg.png'
-								alt='stars'
-								width='3%'
-							/>
-							<img
-								src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MichelinStar.svg/1200px-MichelinStar.svg.png'
-								alt='stars'
-								width='3%'
-							/>
-							<img
-								src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MichelinStar.svg/1200px-MichelinStar.svg.png'
-								alt='stars'
-								width='3%'
-							/>
-						</div>
-					)}
+				<div className='restDesc'>
+					<h1>{restaurant.name}</h1>
+					<div>
+						{restaurant.starNumber === 3 && (
+							<div>
+								<img
+									src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MichelinStar.svg/1200px-MichelinStar.svg.png'
+									alt='stars'
+									width='3%'
+								/>
+								<img
+									src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MichelinStar.svg/1200px-MichelinStar.svg.png'
+									alt='stars'
+									width='3%'
+								/>
+								<img
+									src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MichelinStar.svg/1200px-MichelinStar.svg.png'
+									alt='stars'
+									width='3%'
+								/>
+							</div>
+						)}
 
-					{restaurant.starNumber === 2 && (
-						<div>
-							<img
-								src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MichelinStar.svg/1200px-MichelinStar.svg.png'
-								alt='stars'
-								width='3%'
-							/>
-							<img
-								src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MichelinStar.svg/1200px-MichelinStar.svg.png'
-								alt='stars'
-								width='3%'
-							/>
-						</div>
-					)}
+						{restaurant.starNumber === 2 && (
+							<div>
+								<img
+									src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MichelinStar.svg/1200px-MichelinStar.svg.png'
+									alt='stars'
+									width='3%'
+								/>
+								<img
+									src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MichelinStar.svg/1200px-MichelinStar.svg.png'
+									alt='stars'
+									width='3%'
+								/>
+							</div>
+						)}
 
-					{restaurant.starNumber === 1 && (
-						<img
-							src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MichelinStar.svg/1200px-MichelinStar.svg.png'
-							alt='stars'
-							width='3%'
-						/>
-					)}
-				</div>
-				<div className='restText'>
-					{/* <p>Start(s) Number: {restaurant.starNumber}</p> */}
-					<p>Intrducution (from Michelin Guide)</p>
-					<p>{restaurant.introduction}</p>
-					<a href={restaurant.website}>{restaurant.website}</a>
-					<p>Opening Hours: {restaurant.openingHours}</p>
-					<p>
-						<a href={restaurant.menue}>Menu</a>
-					</p>
-					<p>Phone: {restaurant.Phone}</p>
-					<p>Address: {restaurant.address}</p>
-					<div className='restPics'>
-						<img src={restaurant.restaurantImg} alt='restaurant' />
-						<img src={restaurant.dishImgOne} alt='dish one' />
+						{restaurant.starNumber === 1 && (
+							<img
+								src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MichelinStar.svg/1200px-MichelinStar.svg.png'
+								alt='stars'
+								width='3%'
+							/>
+						)}
+					</div>
+
+					<div className='restText'>
+						{/* <p>Start(s) Number: {restaurant.starNumber}</p> */}
+						<p>Intrducution (from Michelin Guide)</p>
+						<p>{restaurant.introduction}</p>
+						<a href={restaurant.website}>{restaurant.website}</a>
+						<p>Opening Hours: {restaurant.openingHours}</p>
+						<p>
+							<a href={restaurant.menue}>Menu</a>
+						</p>
+						<p>Phone: {restaurant.Phone}</p>
+						<p>Address: {restaurant.address}</p>
 					</div>
 				</div>
-			</div>
-			<div className='reviews'>
-				<div className='reviewsImg'>
-					<img src={restaurant.dishImgTwo} alt='dish two' />
+				<div className='backLink'>
+					<Link to={'/restaurants'}>
+						<p>Other Michelin Stars</p>
+					</Link>
 				</div>
 				<div className='reviewsContainer'>
 					<div className='reviewForm'>
@@ -147,6 +146,12 @@ const RestaurantID = ({ match }) => {
 						)}
 					</div>
 				</div>
+			</div>
+
+			<div className='restPics'>
+				<img src={restaurant.restaurantImg} alt='restaurant' />
+				<img src={restaurant.dishImgOne} alt='dish one' />
+				<img src={restaurant.dishImgTwo} alt='dish two' />
 			</div>
 		</div>
 	);

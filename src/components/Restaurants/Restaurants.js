@@ -19,7 +19,7 @@ const Shows = () => {
 	}
 
 	return (
-		<div>
+		<div className='restaurants'>
 			<Grid gap='1rem'>
 				{restaurants.map((rest) => (
 					<div className='restLinks'>
