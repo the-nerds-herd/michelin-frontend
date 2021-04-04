@@ -120,6 +120,34 @@ navdropdownmenu [title] {
 }
 
 /* =======================END RESTAURANTS================= */
+
+.stars {
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+}
+.stars h3 {
+	color:rgb(191, 0, 44);
+	margin: 0 40px 0 0;
+}
+
+.stars .starslink{
+	text-decoration: none;
+}
+
+.starslink h3:hover {
+	color: gray;
+}
+
+/* =======================END STARS================= */
+.about {
+	margin: 20px;
+}
+.about h3 {
+	margin: 15px;
+	font-size: 25px;
+}
+/* =======================END ABOUT================= */
 .footer {
 	background-color: rgb(191, 0, 44);
 	color: white;

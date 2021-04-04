@@ -16,17 +16,17 @@ const ThreeStars = () => {
 
 	return (
 		<div>
-			<div>
-				<Link to='/onestar'>
-					{/* <img src={MichelinOne} alt="One Michelin Star"/> */}
+			<div className='stars'>
+				<Link to='/restaurants' className='starslink'>
+					<h3>All Restaurants</h3>
+				</Link>
+				<Link to='/onestar' className='starslink'>
 					<h3>One Star</h3>
 				</Link>
-				<Link to='/twostars'>
-					{/* <img src={MichelinTwo} alt="Two Michelin Stars"/> */}
+				<Link to='/twostars' className='starslink'>
 					<h3>Two Stars</h3>
 				</Link>
-				<Link to='/threestars'>
-					{/* <img src={MichelinThree} alt="Three Michelin Stars"/> */}
+				<Link to='/threestars' className='starslink'>
 					<h3>Three Stars</h3>
 				</Link>
 			</div>

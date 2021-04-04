@@ -20,6 +20,20 @@ const Restaurants = () => {
 
 	return (
 		<div>
+			<div className='stars'>
+				<Link to='/restaurants' className='starslink'>
+					<h3>All Restaurants</h3>
+				</Link>
+				<Link to='/onestar' className='starslink'>
+					<h3>One Star</h3>
+				</Link>
+				<Link to='/twostars' className='starslink'>
+					<h3>Two Stars</h3>
+				</Link>
+				<Link to='/threestars' className='starslink'>
+					<h3>Three Stars</h3>
+				</Link>
+			</div>
 			<Grid>
 				{restaurants.map((rest) => (
 					<div className='restLinks'>
@@ -29,14 +43,13 @@ const Restaurants = () => {
 									src={rest.restaurantImg}
 									alt='restaurant'
 									className='restImg'
-									/>
-									<p>{rest.name}</p>
+								/>
+								<p>{rest.name}</p>
 							</Link>
 						</Card>
 					</div>
 				))}
 			</Grid>
-			
 		</div>
 	);
 };
