@@ -34,14 +34,16 @@ h2 {
 	background-color: white;
 }
 
-navdropdownmenu [title] {
+/* ==================== SUBMENU ================ */
+
+#collasible-nav-dropdown {
 	color: white;
-	font-size: 20px;
+	font-size: 24px;
+	font-weight: 500;
 }
 .link-text h6 {
 	color: gray;
 }
-
 
 /* ====================END HOME================ */
 .restPics {
@@ -129,6 +131,7 @@ navdropdownmenu [title] {
 .stars h3 {
 	color:rgb(191, 0, 44);
 	margin: 0 40px 0 0;
+	font-size: 22px;
 }
 
 .stars .starslink{
