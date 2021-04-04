@@ -35,9 +35,6 @@ const Navi = () => {
 						<Nav.Link href='/'>
 							<h4 className='link-text'>Home</h4>
 						</Nav.Link>
-						{/* <Nav.Link href='/restaurants'>
-							<h4 className='link-text'>Resturants</h4>
-						</Nav.Link> */}
 						<NavDropdownMenu id='collasible-nav-dropdown' title='Restaurants'>
 							<NavDropdown.Item href='/restaurants' className='link-text'>
 								<h6>All Restaurants</h6>
