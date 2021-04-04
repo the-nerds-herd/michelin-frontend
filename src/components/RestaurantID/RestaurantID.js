@@ -100,8 +100,7 @@ const RestaurantID = ({ match }) => {
 					</div>
 
 					<div className='restText'>
-						{/* <p>Start(s) Number: {restaurant.starNumber}</p> */}
-						<p>Intrducution (from Michelin Guide)</p>
+						<p>Introduction (from Michelin Guide)</p>
 						<p>{restaurant.introduction}</p>
 						<a href={restaurant.website}>{restaurant.website}</a>
 						<p>Opening Hours: {restaurant.openingHours}</p>
@@ -110,7 +109,6 @@ const RestaurantID = ({ match }) => {
 						</p>
 						<p>Phone: {restaurant.Phone}</p>
 						<p>Address: {restaurant.address}</p>
-
 					</div>
 				</div>
 				<div className='backLink'>
@@ -131,7 +129,6 @@ const RestaurantID = ({ match }) => {
 						{restaurant.reviews && restaurant.reviews.length ? (
 							restaurant.reviews.map((review) => (
 								<div className='reviewInformation'>
-									{/* <p>Review ID:{review._id}</p> */}
 									<p>Reviewer: {review.reviewer}</p>
 									<p>Rating: {review.rating}</p>
 									<p>Review Title: {review.title}</p>

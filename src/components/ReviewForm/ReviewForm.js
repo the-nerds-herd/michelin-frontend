@@ -64,7 +64,6 @@ const ReviewForm = ({ match }) => {
 						placeholder='your name'
 						onChange={handleChange}
 						value={review.reviewer}
-						// require='true'
 					/>
 				</Form.Group>
 				<Form.Group controlId='title'>
@@ -74,7 +73,6 @@ const ReviewForm = ({ match }) => {
 						placeholder='title of your review'
 						onChange={handleChange}
 						value={review.title}
-						// require='true'
 					/>
 				</Form.Group>
 				<Form.Group controlId='rating'>

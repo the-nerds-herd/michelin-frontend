@@ -1,14 +1,18 @@
-# Michelin Stars finder
+# Michelin Stars Finder
 
 ## Description
 
-The Michelin Finder is an application that displays Michelin star restaurants in Washington D.C. (more to come in stretch goals). Inside the details of each restaurant, you can find their reviews, menu, open hours, and other important information.
+The Michelin Finder is an application that displays Michelin star restaurants in Washington D.C.. Inside the details of each restaurant, you can find their reviews, menu, open hours, and other important information.
 
 This repository is for the Front End of this app.
 
 ### Screenshot of App
 
-![Screen Shot 2021-04-01 at 4 33 48 PM](https://media.git.generalassemb.ly/user/34159/files/2255c580-9308-11eb-80c8-800a935bc6d0)
+![Screen Shot 2021-04-04 at 3 09 05 PM](https://user-images.githubusercontent.com/78054396/113521605-c3868b00-9557-11eb-81b4-70953e7a5a19.png)
+![Screen Shot 2021-04-04 at 3 16 35 PM](https://user-images.githubusercontent.com/78054396/113521751-c59d1980-9558-11eb-8be3-cb12e1a8bc7a.png)
+![Screen Shot 2021-04-04 at 3 17 33 PM](https://user-images.githubusercontent.com/78054396/113521778-e7969c00-9558-11eb-91a8-15dc2da1c691.png)
+![Screen Shot 2021-04-04 at 3 15 22 PM](https://user-images.githubusercontent.com/78054396/113521728-9edee300-9558-11eb-88c1-afddfb82243d.png)
+![Screen Shot 2021-04-04 at 3 18 48 PM](https://user-images.githubusercontent.com/78054396/113521807-11e85980-9559-11eb-9859-ea95e6968a65.png)
 
 ## Technologies Used
 
@@ -16,7 +20,7 @@ This repository is for the Front End of this app.
 - Components, props, and state
 - React Router
 - CSS grid and flexbox
-- Style Componenets
+- Style Components
 - Bootstrap
 - Axios
 
@@ -54,10 +58,11 @@ https://michelin-restaurants-finder.herokuapp.com/restaurants
 - After coming up the project idea, we set up two repositories (one for frontend, and one for backend).
 - We used Jira Software to create the ticket system. And we tried to mock the industry workflow.
 - We created multiple tickets/issues based on our user stories and each team member went to the board for assignment.
+- Screen shot of Jira
   ![Screen Shot 2021-04-02 at 10 03 17 AM](https://user-images.githubusercontent.com/78054396/113432520-bff9d500-939a-11eb-9f5b-2ead4a831f7c.png)
 - We used the ticket/issues number as our branch name.
 - Once we completed the tasks, we push to the dev branch in repositories.
-- We set a merge rull which is at least one other member need to review and approve the merge.
+- We set a merge pull where at least one other member needed to review and approve the merge.
 - After merge, we pull or rebase for the updates.
 
 ## Getting Started/Installation Instructions

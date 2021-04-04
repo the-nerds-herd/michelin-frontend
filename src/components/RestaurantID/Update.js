@@ -25,7 +25,6 @@ const Update = ({ match, review, getData }) => {
 			},
 			data: reviews,
 		})
-			// .put(`${APIurl}/reviews/${id}`, reviews)
 			.then(() => {
 				getData();
 			})
