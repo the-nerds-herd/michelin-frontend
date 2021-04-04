@@ -1,3 +1,7 @@
+a {
+	text-decoration: none;
+}
+
 .home {
 	background-image: url(https://images.pexels.com/photos/255501/pexels-photo-255501.jpeg?cs=srgb&dl=pexels-pixabay-255501.jpg&fm=jpg);
 	background-size: cover;
@@ -6,29 +10,17 @@
 	height: 90vh;
 }
 
-/* .restaurants {
-	position: relative;
-	background-image: url(https://images.pexels.com/photos/255501/pexels-photo-255501.jpeg?cs=srgb&dl=pexels-pixabay-255501.jpg&fm=jpg);
-	background-size: cover;
-}
-.restaurants::before {
-	content: '';
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.23);
-} */
-
 .navbar {
 	/* position: fixed; */
-	background-color: rgb(216, 4, 4);
+	background-color: rgb(191, 0, 44);
 	/* margin-bottom: 90px; */
 }
 .link-text {
 	color: white;
 }
 .link-text:hover {
-	color: gold;
+	color: grey;
 }
-
 .michelin-pic {
 	position: fixed;
 	top: 53%;
@@ -43,8 +35,18 @@ h2 {
 	background-color: white;
 }
 
-/* ====================END HOME================ */
+/* ==================== SUBMENU ================ */
 
+#collasible-nav-dropdown {
+	color: white;
+	font-size: 24px;
+	font-weight: 500;
+}
+.link-text h6 {
+	color: gray;
+}
+
+/* ====================END HOME================ */
 .restPics {
 	width: 40%;
 	display: flex;
@@ -56,20 +58,18 @@ h2 {
 
 	text-align: center;
 }
-
 .restPics img {
 	width: 100%;
 }
-
 .restContainer {
 	display: flex;
 	width: 100%;
 }
 
+
 .restDesc {
 	text-align: center;
 }
-
 .restText {
 	text-align: start;
 	width: 90%;
@@ -80,23 +80,19 @@ h2 {
 	border: 1px solid gray;
 	margin: 1rem;
 }
-
 .reviewInformation {
 	border: 1px solid lightgray;
 	margin: 1rem;
 }
-
 .reviewForm {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
 	height: 7%;
 }
-
 .reviewForm h3 {
 	margin-left: 1rem;
 }
-
 .reviewlink {
 	margin-right: 2rem;
 	margin-top: 0.3rem;
@@ -120,29 +116,65 @@ h2 {
 	text-align: left;
 	margin-top: 2rem;
 }
+
 /* ====================END RESTAURANTSID====================== */
-
-.restImg:hover {
-	width: 110%;
+.restLinks .restImg:hover {
+	width: 150%;
 }
-
 .restLinks {
-	border-color: lightcyan;
 	margin: 15% 3%;
 	padding-top: 2%;
 }
-
 .restLinks .restlinktext {
 	text-decoration: none;
-	color: darkblue;
+	color: gray;
+	align-items: center;
+}
+.restlinktext:hover {
+	color: rgb(191, 0, 44);
+}
+.restLinks .restImg {
+	width: 300px;
+	height: 250px;
+}
+.restLinks p {
+	padding: 4px 8px;
+	margin: 0;
+	font-weight: 650;
 }
 
-.restlinktext:hover {
-	color: firebrick;
-}
 /* =======================END RESTAURANTS================= */
+
+.stars {
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+}
+.stars h3 {
+	color:rgb(191, 0, 44);
+	margin: 0 40px 0 0;
+	font-size: 22px;
+}
+
+.stars .starslink{
+	text-decoration: none;
+}
+
+.starslink h3:hover {
+	color: gray;
+}
+
+/* =======================END STARS================= */
+.about {
+	margin: 20px;
+}
+.about h3 {
+	margin: 15px;
+	font-size: 25px;
+}
+/* =======================END ABOUT================= */
 .footer {
-	background-color: rgb(216, 4, 4);
+	background-color: rgb(191, 0, 44);
 	color: white;
 	padding-bottom: 1px;
 	margin-top: 50px;

@@ -6,15 +6,16 @@ import Andrew from './images/Andrew.jpg';
 import { Card, CardDeck } from 'react-bootstrap';
 const About = () => {
 	return (
-		<div>
-			<br/>
-			<h1>Meet the brains</h1>
-			<br />
+
+		<div className='about'>
+			<h1>Meet the brains:</h1>
 			<h3>
 				This application was created by a team of students at General Assembly
-				during their project for unit 3. The Michelin Star Finder is built using
-				React.js with Boostrap and Flexbox. It uses a custom API built from
-				Node.js with Express.js, and a database with MongoDB Atlas.
+				during their project for Unit 3. <br></br> <br></br> The Michelin Star
+				Finder is built using React.js with Boostrap and Flexbox. It uses a
+				custom API built from Node.js with Express.js, and a database with
+				MongoDB Atlas.
+	
 			</h3>
 			<br/>
 			<CardDeck>
