@@ -16,13 +16,22 @@ const Update = ({ match, review, getData }) => {
 	const handleUpdate = (event) => {
 		event.preventDefault();
 		const id = review._id;
-		axios
-			.put(`${APIurl}/reviews/${id}`, reviews)
+
+		axios({
+			url: `${APIurl}/reviews/${id}`,
+			method: 'PUT',
+			headers: {
+				Authorization: `Bearer ${localStorage.getItem('token')}`,
+			},
+			data: reviews,
+		})
+			// .put(`${APIurl}/reviews/${id}`, reviews)
 			.then(() => {
 				getData();
 			})
 			.catch(console.error);
 	};
+
 	const handleChange = (event) => {
 		setReviews({ ...reviews, [event.target.id]: event.target.value });
 	};
