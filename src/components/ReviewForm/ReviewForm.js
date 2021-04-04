@@ -105,7 +105,7 @@ const ReviewForm = ({ match }) => {
 					Submit
 				</Button>
 				<Button variant='outline-danger' onClick={handleClick}>
-					Cancle
+					Cancel
 				</Button>
 			</Form>
 		</div>
