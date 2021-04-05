@@ -1,5 +1,3 @@
-// const APIurl = 'https://michelin-restaurants-finder.herokuapp.com/restaurants';
-
-const APIurl = 'http://localhost:8800/restaurants';
+const APIurl = 'https://michelin-restaurants-finder.herokuapp.com/restaurants';
 
 export default APIurl;
