@@ -9,7 +9,7 @@ const ReviewForm = ({ match }) => {
 	const initialState = {
 		title: '',
 		body: '',
-		reviewer: '',
+		// reviewer: '',
 		rating: '',
 		restaurantId: `${match.params.id}`,
 	};
@@ -17,7 +17,7 @@ const ReviewForm = ({ match }) => {
 	const [review, setReview] = useState({
 		title: '',
 		body: '',
-		reviewer: '',
+		// reviewer: '',
 		rating: '',
 		restaurantId: `${match.params.id}`,
 	});
@@ -57,7 +57,7 @@ const ReviewForm = ({ match }) => {
 				</span>
 			</h4>
 			<Form onSubmit={handleSubmit}>
-				<Form.Group controlId='reviewer'>
+				{/* <Form.Group controlId='reviewer'>
 					<Form.Label>Reviewer</Form.Label>
 					<Form.Control
 						type='text'
@@ -65,7 +65,7 @@ const ReviewForm = ({ match }) => {
 						onChange={handleChange}
 						value={review.reviewer}
 					/>
-				</Form.Group>
+				</Form.Group> */}
 				<Form.Group controlId='title'>
 					<Form.Label>Title</Form.Label>
 					<Form.Control

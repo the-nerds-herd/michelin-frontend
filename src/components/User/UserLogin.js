@@ -24,6 +24,7 @@ function LoginPage() {
 			})
 			.then(() => {
 				setUser(formState.name);
+				localStorage.setItem('username', formState.name);
 				setFormState(initialState);
 			})
 			.catch(() => setError(true));
