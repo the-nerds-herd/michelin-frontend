@@ -6,6 +6,23 @@ The Michelin Finder is an application that displays Michelin star restaurants in
 
 This repository is for the Front End of this app.
 
+## How to get started
+
+If you want to go straight to the application, simply click on [https://michelin-restaurant-finder.herokuapp.com/](https://michelin-restaurant-finder.herokuapp.com/)
+
+or you can install locally by forking/cloning this repository.
+
+In the project directory, you can run:
+
+### `npm i`
+
+Install all the dependencies in this app.
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 ### Screenshot of App
 
 ![Screen Shot 2021-04-04 at 3 09 05 PM](https://user-images.githubusercontent.com/78054396/113521605-c3868b00-9557-11eb-81b4-70953e7a5a19.png)
@@ -73,16 +90,3 @@ https://michelin-restaurants-finder.herokuapp.com/restaurants
 ## Getting Started/Installation Instructions
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm i`
-
-Install all the dependencies in this app.
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
