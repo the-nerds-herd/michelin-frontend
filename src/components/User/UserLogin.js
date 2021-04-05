@@ -20,7 +20,6 @@ function LoginPage() {
 			.post(`${APIurl}/users/signin`, formState)
 			.then(({ data }) => {
 				localStorage.setItem('token', data.token);
-				localStorage.setItem('expiration', Date.now() + 3600);
 			})
 			.then(() => {
 				setUser(formState.name);
