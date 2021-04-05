@@ -10,6 +10,10 @@ a {
 	height: 90vh;
 }
 
+.hi {
+	color: bisque;
+	font-weight: 500;
+}
 .navbar {
 	background-color: rgb(191, 0, 44);
 }

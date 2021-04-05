@@ -24,6 +24,11 @@ This repository is for the Front End of this app.
 - Bootstrap
 - Axios
 
+## References
+
+- https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+- Stack Overflow
+
 ## Backend link
 
 https://github.com/the-nerds-herd/michelin-backend

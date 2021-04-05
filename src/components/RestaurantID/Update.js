@@ -8,7 +8,7 @@ const Update = ({ match, review, getData }) => {
 	const [reviews, setReviews] = useState({
 		title: '',
 		body: '',
-		reviewer: '',
+		// reviewer: '',
 		rating: '',
 		restaurantId: `${match.params.id}`,
 	});
@@ -38,22 +38,17 @@ const Update = ({ match, review, getData }) => {
 	return (
 		<div className={review._id}>
 			<div>
-				<h4 style={{ marginTop: '2rem' }}>
-					Update Review{' '}
-					<span style={{ fontStyle: 'italic', color: 'brown' }}>
-						{match.params.name}
-					</span>
-				</h4>
+				<h4 style={{ marginTop: '2rem' }}>Update Review</h4>
 				<Form onSubmit={handleUpdate} className='updateForm'>
-					<Form.Group controlId='reviewer'>
+					{/* <Form.Group controlId='reviewer'>
 						<Form.Label>Reviewer</Form.Label>
 						<Form.Control
 							type='text'
-							placeholder={review.reviewer}
+							placeholder={review.owner.name}
 							onChange={handleChange}
 							value={reviews.reviewer}
 						/>
-					</Form.Group>
+					</Form.Group> */}
 					<Form.Group controlId='title'>
 						<Form.Label>Title</Form.Label>
 						<Form.Control
